@@ -2,12 +2,22 @@
 
 ## 各説明
 
-### ios-ai-agent-ignore
+### templates
 
-AIエージェントでiOSプロジェクト開くと全ファイル読みに行くから、画像とかバイナリとかトークンの無駄遣いになるやつを省くための設定ファイルまとめ
+他のiOSプロジェクトでも使い回せそうだなと思ったものをまとめて置いてる場所
 
-作成したものはCursor, Claude Code, GitHub Copilot, Antigravity, Gemini CLI
+### SwiftUI
 
-プロジェクトルートにコピーして使う!
+SwiftUIの機能を深堀りしたり試したやつをまとめてる場所
 
-ios-ai-agent-ignoreの中に説明入れたREADME.mdあり
+### UIKit
+
+UIKitの機能を深堀りしたり試したやつをまとめてる場所
+
+### WWDC
+
+WWDCのセッションを追体験したり新機能を試したやつをまとめてる場所
+
+### Architecture
+
+iOSアプリのアーキテクチャ(MVVM, TCAなど)を試したり比較したやつをまとめてる場所
