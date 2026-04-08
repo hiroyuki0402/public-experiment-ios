@@ -1,0 +1,78 @@
+# .cursorindexingignore — Cursorインデックス除外（パフォーマンス層）
+# インデックス（RAG検索）から除外するが、手動で @file すれば参照可能。
+# 「トークンおばけ」＝テキスト形式だが巨大でAIのコンテキストを圧迫するもの。
+#
+# .cursorignore に入れたものは自動的にインデックスからも除外されるため、
+# ここには .cursorignore に含まれない追加パターンのみ記載。
+#
+# また .gitignore のエントリもCursorが自動除外するため重複不要。
+
+
+# トークンおばけ：第2層（読み取り許可・自動検索から除外）
+
+# Xcodeプロジェクト管理ファイル
+# AIが編集すると高確率で破壊する。読み取りは構造理解に有用。
+# → .cursorrules で「*.pbxproj を絶対に編集するな」と併記推奨
+*.pbxproj
+
+# Interface Builder（XML形式だが巨大、AI編集精度が極めて低い）
+# SwiftUIメインなら完全除外でもOK
+*.storyboard
+*.xib
+
+# String Catalog（多言語で数千行に膨れる）
+*.xcstrings
+
+# Xcodeワークスペース
+*.xcworkspace/
+
+# Asset Catalog（画像バイナリは.cursorignoreで除外済み）
+# Contents.json はカラー定義やアセット構造の理解に有用なので残す設計。
+# ディレクトリごと除外したい場合は下記を有効化:
+# *.xcassets/
+
+# ロックファイル（巨大なハッシュ値リスト）
+Podfile.lock
+Package.resolved
+Cartfile.resolved
+*.lock
+package-lock.json
+yarn.lock
+
+# SPM内部 
+.swiftpm/
+
+# コード生成ツール出力（ビルド時に再生成される）
+**/R.generated.swift
+**/Strings+Generated.swift
+**/Assets+Generated.swift
+**/Generated/
+**/Sourcery/Output/
+**/SwiftGen/
+
+# Xcode Templates & Snippets 
+*.codesnippet
+*.xctemplate
+
+# Playground（アクティブ使用時以外は除外）
+*.playground/
+*.playgroundbook
+
+# ドキュメント生成物 
+docs/generated/
+
+# ツール生成ファイル 
+buildServer.json
+
+# テスト成果物（レポート系）
+fastlane/report.xml
+fastlane/screenshots/
+fastlane/test_output/
+coverage/
+
+# ローカライズ（ベース言語以外）
+# 全言語を除外したい場合:
+# *.lproj/
+# ベース言語だけ残したい場合:
+# !Base.lproj/
+# !en.lproj/

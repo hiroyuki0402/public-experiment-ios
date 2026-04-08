@@ -1,0 +1,41 @@
+{
+  "// NOTE": [
+    "この内容を既存の .vscode/settings.json に手動マージしてください。",
+    "Cursor / VS Code 共通で使える search.exclude と files.exclude の設定。"
+  ],
+  "files.exclude": {
+    "**/*.xcuserstate": true,
+    "**/DerivedData": true,
+    "**/Pods": true,
+    "**/.build": true,
+    "**/SourcePackages": true,
+    "**/*.dSYM": true,
+    "**/*.xcarchive": true,
+    "**/*.framework": true,
+    "**/*.xcframework": true,
+    "**/Carthage/Build": true,
+    "**/Carthage/Checkouts": true,
+    "**/.xcodescriptcache": true,
+    "**/xcuserdata": true
+  },
+  "search.exclude": {
+    "**/DerivedData": true,
+    "**/Pods": true,
+    "**/.build": true,
+    "**/SourcePackages": true,
+    "**/node_modules": true,
+    "**/*.pbxproj": true,
+    "**/*.xcassets/**/*.png": true,
+    "**/*.xcassets/**/*.jpg": true,
+    "**/*.xcassets/**/*.pdf": true,
+    "**/*.xcstrings": true,
+    "**/*.storyboard": true,
+    "**/*.xib": true,
+    "**/R.generated.swift": true,
+    "**/Generated": true,
+    "**/Sourcery/Output": true,
+    "**/*.xcresult": true,
+    "**/Carthage": true,
+    "**/.specstory": true
+  }
+}

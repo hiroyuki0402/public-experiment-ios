@@ -1,0 +1,106 @@
+# .aiexclude — Google Antigravity / Gemini Code Assist
+# Gemini Code Assist (IDE拡張) と Antigravity が使用する除外ファイル。
+#
+#   - 否定パターン（!）非対応
+#   - プロジェクトルートの単一ファイルのみ（サブディレクトリ配置不可）
+#   - * がディレクトリ境界を越えて貪欲にマッチする
+#   - Antigravity は .gitignore を無視するとの報告あり → このファイルが重要
+#   - list_dir ツールがバイパスするバグ報告あり (Issue #14546)
+
+# Secrets
+.env
+.env.*
+.env.local
+.env.production
+secrets/
+credentials/
+*Secrets.xcconfig
+*GoogleService-Info.plist
+*google-services.json
+*.p12
+*.p8
+*.pem
+*.key
+*.cer
+*.certSigningRequest
+*.mobileprovision
+*.provisionprofile
+
+# Build Artifacts
+DerivedData/
+build/
+Build/
+.build/
+*.xcresult
+.xcodescriptcache
+
+# Binaries
+*.ipa
+*.xcarchive
+*.dSYM
+*.dSYM.zip
+*.app
+*.framework
+*.xcframework
+*.a
+*.dylib
+*.o
+*.hmap
+*.metallib
+*.nib
+*.storyboardc
+*.mom
+*.momd
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+
+# Dependencies
+Pods/
+Carthage/
+SourcePackages/
+node_modules/
+
+# Xcode State
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# Token Monsters
+*.pbxproj
+*.storyboard
+*.xib
+*.xcstrings
+
+# Images & Media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.heic
+*.svg
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.ttf
+*.otf
+*.lottie
+
+# Auto-Generated
+*R.generated.swift
+*Generated/
+*Sourcery/Output/
+
+# Lock Files
+Podfile.lock
+Package.resolved
+Cartfile.resolved
+
+# Documentation Archives
+*.doccarchive
+
+# OS Junk
+.DS_Store

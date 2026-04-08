@@ -1,0 +1,119 @@
+# .cursorignore — Cursor AIアクセス完全ブロック（セキュリティ層）
+# AIが一切アクセスできなくなる。
+# 機密情報・バイナリ・ビルド成果物が対象。
+# Cursorは.gitignoreも自動でインデックス除外するため、
+# ここには「AIに絶対読ませたくないもの」のみ記載
+#
+# 注意: Cursor公式は「best-effort」と明記。
+# AgentのターミナルコマンドやMCPツール経由のアクセスは防げない。
+# 機密ファイルは多層防御が必須。
+
+# Secrets & Credentials
+.env
+.env.*
+.env.local
+.env.production
+secrets/
+credentials/
+**/Secrets.xcconfig
+**/GoogleService-Info.plist
+**/google-services.json
+*.p12
+*.p8
+*.pem
+*.key
+*.cer
+*.certSigningRequest
+*.mobileprovision
+*.provisionprofile
+
+# Build Artifacts（GB単位になりうる）
+DerivedData/
+build/
+Build/
+.build/
+*.xcresult/
+.xcodescriptcache
+
+# Binaries & Compiled
+*.ipa
+*.xcarchive
+*.dSYM/
+*.dSYM.zip
+*.app/
+*.framework/
+*.xcframework/
+*.a
+*.dylib
+*.o
+*.d
+*.hmap
+*.dia
+*.metallib
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+*.nib
+*.storyboardc
+*.mom
+*.momd
+
+# Dependencies（サードパーティコード全体）
+Pods/
+Carthage/Build/
+Carthage/Checkouts/
+SourcePackages/
+node_modules/
+
+# Images & Media（バイナリ、トークンの無駄）
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.heic
+*.heif
+*.tiff
+*.tif
+*.bmp
+*.ico
+*.svg
+*.mp4
+*.mov
+*.m4v
+*.mp3
+*.wav
+*.aac
+*.m4a
+*.caf
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.lottie
+
+# Xcode User State
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+IDEWorkspaceChecks.plist
+xcschememanagement.plist
+
+# OS & Editor Junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Cursor Chat History
+.specstory/
+
+# Archives & Compressed
+*.zip
+*.tar.gz
+*.rar
+
+# Documentation Archives
+*.doccarchive
