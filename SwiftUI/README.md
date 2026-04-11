@@ -4,3 +4,9 @@
 
 SwiftUIの裏側で動いているAttribute Graphの仕組みを深掘りしてみるためのプロジェクト。
 普段なにげなく使っている@Stateとかbodyの依存関係を、SwiftUIがどう連動して画面が切り替わるのか、その流れを実際に書きながら確かめてみるためもので、非公開フレームワークだから直接は触れないけれど、似たような仕組みを動かしてみて理解を深めるためのもの
+
+## AppleStoreTabScroll
+
+Apple Storeアプリ風のタブバー自動非表示UIを試してみるためのプロジェクト。
+下スクロールでタブバーが消えて、上にちょっと戻すとすぐ出てくるやつで、iOS18+のonScrollGeometryChangeや
+ScrollPhase、Tab(role:.search)あたりの新APIの使い方を実際に書きながら確かめてみるためのもの
