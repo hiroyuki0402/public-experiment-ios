@@ -1,0 +1,123 @@
+# .copilotignore — GitHub Copilot（copilotignore-vscode コミュニティ拡張用）
+#
+# copilotignore-vscode 拡張
+# (marketplace.visualstudio.com/items?itemName=Mattickx.copilotignore-vscode)
+# を使用する場合に機能する。
+
+# Secrets
+.env
+.env.*
+.env.local
+.env.production
+secrets/
+credentials/
+**/Secrets.xcconfig
+**/GoogleService-Info.plist
+**/google-services.json
+*.p12
+*.p8
+*.pem
+*.key
+*.cer
+*.certSigningRequest
+*.mobileprovision
+*.provisionprofile
+
+# Build Artifacts
+DerivedData/
+build/
+Build/
+.build/
+*.xcresult/
+.xcodescriptcache
+
+# Binaries
+*.ipa
+*.xcarchive
+*.dSYM/
+*.dSYM.zip
+*.app/
+*.framework/
+*.xcframework/
+*.a
+*.dylib
+*.o
+*.d
+*.hmap
+*.dia
+*.metallib
+*.nib
+*.storyboardc
+*.mom
+*.momd
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+
+# Dependencies
+Pods/
+Carthage/Build/
+Carthage/Checkouts/
+SourcePackages/
+node_modules/
+
+# Xcode State
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+IDEWorkspaceChecks.plist
+
+# Images & Media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.heic
+*.heif
+*.svg
+*.mp4
+*.mov
+*.m4v
+*.mp3
+*.wav
+*.aac
+*.m4a
+*.caf
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.lottie
+
+# Token Monsters
+*.pbxproj
+*.storyboard
+*.xib
+*.xcstrings
+*.xcworkspace/
+
+# Auto-Generated
+**/R.generated.swift
+**/Generated/
+**/Sourcery/Output/
+
+# Test & CI Artifacts
+fastlane/report.xml
+fastlane/screenshots/
+fastlane/test_output/
+coverage/
+
+# Lock Files
+Podfile.lock
+Package.resolved
+Cartfile.resolved
+
+# Documentation Archives
+*.doccarchive
+
+# OS Junk
+.DS_Store
+Thumbs.db
+*.swp

@@ -1,0 +1,120 @@
+# .geminiignore — Gemini CLI 専用
+# .gitignore と同じ構文。否定パターン（!）対応。
+# Gemini CLI はデフォルトで .gitignore を尊重するため、
+# ここには .gitignore に含まれない追加除外 + 明示的な残し設定を記載。
+#
+#   - .gitignore のエントリを ! で上書きできない (Issue #5259)
+#   - セッション再起動が必要（ホットリロードなし）
+#   - list_dir ツールがバイパスするバグ報告あり (Issue #14546)
+
+# Secrets
+.env
+.env.*
+secrets/
+credentials/
+**/Secrets.xcconfig
+**/GoogleService-Info.plist
+*.p12
+*.p8
+*.pem
+*.key
+*.cer
+*.mobileprovision
+*.provisionprofile
+
+# Build Artifacts
+DerivedData/
+build/
+Build/
+.build/
+*.xcresult/
+.xcodescriptcache
+*.xcarchive
+
+# Binaries
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.app/
+*.framework/
+*.xcframework/
+*.a
+*.dylib
+*.o
+*.hmap
+*.metallib
+*.nib
+*.storyboardc
+*.mom
+*.momd
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+
+# Dependencies
+Pods/
+Carthage/
+SourcePackages/
+node_modules/
+
+# Xcode State
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# Token Monsters
+*.pbxproj
+*.storyboard
+*.xib
+*.xcstrings
+*.xcworkspace/
+
+# Images & Media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.heic
+*.svg
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.ttf
+*.otf
+*.lottie
+
+# Auto-Generated
+**/R.generated.swift
+**/Generated/
+**/Sourcery/Output/
+
+# Lock Files
+Podfile.lock
+Package.resolved
+Cartfile.resolved
+
+# Documentation Archives
+*.doccarchive
+
+# OS Junk
+.DS_Store
+
+# 明示的に残すもの
+!README.md
+!CLAUDE.md
+!AGENTS.md
+!GEMINI.md
+!Package.swift
+!Podfile
+!Cartfile
+!*.swift
+!*.metal
+!*.xcconfig
+!*.entitlements
+!*.xctestplan
+!*.intentdefinition
+!Fastfile
+!Appfile
