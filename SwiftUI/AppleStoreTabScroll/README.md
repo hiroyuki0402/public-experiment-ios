@@ -1,5 +1,11 @@
 # AppleStoreTabScroll
 
+
+
+https://github.com/user-attachments/assets/6114a001-0fd4-4fd4-8e18-36cb0b0f9149
+
+
+
 Apple Storeアプリ風のタブバー自動非表示UIをSwiftUIとUIKitの両方で実装した。
 NavBarのボタンでSwiftUI版とUIKit版を切り替えられる。
 
