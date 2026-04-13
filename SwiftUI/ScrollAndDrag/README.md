@@ -1,6 +1,9 @@
 # ドラッグしながらスクロール、コンテンツの位置を変更
 
-https://github.com/user-attachments/assets/a37aa9bf-97c4-47bb-9670-ce93f4550d09
+
+https://github.com/user-attachments/assets/972c9619-97b9-4a33-ac75-26de272d85b4
+
+
 
 処理の流れ
 [コード](Scroll/ContentView.swift)
