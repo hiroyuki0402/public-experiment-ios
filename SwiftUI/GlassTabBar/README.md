@@ -49,7 +49,7 @@ statusがtrueのときはクリア表示（ブラー0、不透明度1）、false
 
 ## 処理の流れ
 
-mermaid
+```mermaid
 sequenceDiagram
     participant ユーザー
     participant ContentView
@@ -81,7 +81,7 @@ sequenceDiagram
     ContentView ->> blurFade: 新しいactiveTabに対応するアイコンがクリアに
     blurFade ->> blurFade: .animation(.smooth)でスムーズに切り替え
     ContentView ->> ContentView: TabViewも連動してコンテンツ切り替え
-
+```
 
 ## iOS 26 新API
 
