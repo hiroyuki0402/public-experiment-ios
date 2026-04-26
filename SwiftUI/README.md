@@ -1,24 +1,24 @@
 # SwiftUI
 
-## AttributeGraphPlayground
+## [AttributeGraphPlayground](https://github.com/hiroyuki0402/public-experiment-ios/tree/develop/SwiftUI/AttributeGraphPlayground)
 
 SwiftUIの裏側で動いているAttribute Graphの仕組みを深掘りしてみるためのプロジェクト。
 普段なにげなく使っている@Stateとかbodyの依存関係を、SwiftUIがどう連動して画面が切り替わるのか、その流れを実際に書きながら確かめてみるためもので、非公開フレームワークだから直接は触れないけれど、似たような仕組みを動かしてみて理解を深めるためのもの
 
-## AppleStoreTabScroll
+## [AppleStoreTabScroll](https://github.com/hiroyuki0402/public-experiment-ios/tree/develop/SwiftUI/AppleStoreTabScroll)
 
 Apple Storeアプリ風のタブバー自動非表示UIを試してみるためのプロジェクト。
 下スクロールでタブバーが消えて、上にちょっと戻すとすぐ出てくるやつで、iOS18+のonScrollGeometryChangeや
 ScrollPhase、Tab(role:.search)あたりの新APIの使い方を実際に書きながら確かめてみるためのもの
 
 
-## ScrollAndDrag
+## [ScrollAndDrag](https://github.com/hiroyuki0402/public-experiment-ios/tree/develop/SwiftUI/ScrollAndDrag)
 
 ドラッグしながらスクロールしてコンテンツの並び替えをやってみるためのプロジェクト。
 LongPressGestureとDragGestureを組み合わせて、アイテムを長押しで掴んでドラッグで移動、
 onGeometryChangeやonScrollGeometryChange、ScrollPositionあたりの使い方を確かめてみるためのもの
 
-## GlassTabBar
+## [GlassTabBar](https://github.com/hiroyuki0402/public-experiment-ios/tree/develop/SwiftUI/GlassTabBar)
 
 iOS 26で追加されたGlassEffectContainerと.glassEffect()を使って、すりガラス風のカスタムタブバーを作ってみるためのプロジェクト。
 UISegmentedControlをUIViewRepresentableでラップしてガラスエフェクトのカプセル型タブバーにしてて、タブ切り替えでアクションボタンがブラー+フェードで同期的に切り替わるやつ
