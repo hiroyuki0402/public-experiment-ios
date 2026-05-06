@@ -1,5 +1,11 @@
 # iOS 26 OnBoarding（デバイスフレーム付きスクリーンショットページング）
 
+
+
+https://github.com/user-attachments/assets/e71bf028-c3e5-45f6-9186-77f7652a2fdb
+
+
+
 オンボーディング画面の作成
 デバイスフレーム風ベゼル付きのスクリーンショットをページングで表示し、ズーム・ブラー・ガラスボタンで演出するやつ
 画像はURL優先でnilや失敗時はアセットカタログにフォールバックするようにしている
@@ -22,7 +28,7 @@
 オンボーディングの各ページのデータモデル。
 screenshotURLにURLを入れればAsyncImageで読み込んで、nilならfallbackImageのアセット名を使う。
 zoomScaleとzoomAnchorでページごとにスクリーンショットのどこをズームするか制御できる。
-Sendable準拠でSwift 6対応し���る。
+Sendable準拠でSwift 6対応してる。
 
 ### OnBoardingView.swift
 
@@ -45,7 +51,7 @@ OnBoardingScreenshotViewの中で使ってる。
 
 ### OnBoardingTextContentView.swift
 
-タイトル・サブタイトルを��ージング表示する。
+タイトル・サブタイトルをページング表示する
 アクティブページのみクリア表示、非アクティブページはブラー半径30+不透明度0で完全に隠してる。
 scrollTargetBehavior(.paging)で正確にページ単位でスナップする。
 
