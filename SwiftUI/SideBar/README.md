@@ -1,5 +1,11 @@
 # iOS 26 スライド式サイドメニュー（X/Twitter風）
 
+
+
+https://github.com/user-attachments/assets/7e4b1182-9374-4e65-a0f7-582057b0c258
+
+
+
 X風のスライド式サイドメニュー
 左端からのスワイプでサイドメニューが開いて、メインコンテンツが右にスライドするやつ
 iOS 26のConcentricRectangleでデバイスの角丸に追従するマスクをかけてて、UIPanGestureRecognizerをUIGestureRecognizerRepresentableでラップしてる
